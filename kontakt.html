@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt | Vodotehnik</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="kontakt">
+<div id="hdr"></div>
+<main>
+  <section class="ct">
+    <div class="ct-info">
+      <h1 class="d1 rv">Kontakt</h1>
+      <p class="lead rv" data-d=".05">Pokličite, pišite ali nas obiščite v Vrbju pri Žalcu. Odgovorimo v enem delovnem dnevu.</p>
+      <div class="ct-list rv" data-d=".1">
+        <div><h5>Telefon</h5><a href="tel:+38637133690">03 713 36 90</a></div>
+        <div><h5>E-pošta</h5><a href="mailto:info@vodotehnik.si">info@vodotehnik.si</a></div>
+        <div><h5>Naslov</h5><p>Vodotehnik d.o.o.<br>Vrbje 80, 3310 Žalec</p></div>
+      </div>
+    </div>
+    <div class="form rv" data-d=".1" id="rezervacija">
+      <div class="tabs"><button class="on" data-t="pov">Povpraševanje</button><button data-t="rez">Rezervacija termina</button></div>
+      <form>
+        <div class="fg">
+          <div class="fl"><label for="f1">Ime in priimek</label><input id="f1" required autocomplete="name"></div>
+          <div class="fl"><label for="f2">Podjetje</label><input id="f2" autocomplete="organization"></div>
+          <div class="fl"><label for="f3">E-pošta</label><input id="f3" type="email" required autocomplete="email"></div>
+          <div class="fl"><label for="f4">Telefon</label><input id="f4" type="tel" autocomplete="tel"></div>
+          <div class="fl w" data-mode="pov"><label for="f5">Program</label><select id="f5"><option>Vodovod</option><option>Kanalizacija</option><option>Program geotermal</option><option>Drugo</option></select></div>
+          <div class="fl" data-mode="rez" style="display:none"><label for="f6">Datum</label><input id="f6" type="date"></div>
+          <div class="fl" data-mode="rez" style="display:none"><label for="f7">Ura</label><select id="f7"><option>8:00</option><option>10:00</option><option>12:00</option><option>14:00</option></select></div>
+          <div class="fl w"><label for="f8">Sporočilo</label><textarea id="f8" placeholder="Opišite projekt, količine ali izdelek, ki vas zanima"></textarea></div>
+        </div>
+        <button class="btn btn-blue" type="submit">Pošlji <svg viewBox="0 0 20 20" fill="none"><path d="M3 10h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="form-ok">Hvala. Vaše sporočilo smo prejeli in se vam oglasimo v kratkem.</div>
+      </form>
+    </div>
+  </section>
+  <section class="map rv-img">
+    <img src="assets/img/tovarna.jpg" alt="Sedež Vodotehnik v Vrbju" loading="lazy">
+    <div class="map-pin"><b>Vrbje 80, 3310 Žalec</b><p>Proizvodnja, skladišče in uprava na eni lokaciji.</p><a href="https://maps.google.com/?q=Vrbje+80,+3310+%C5%BDalec" target="_blank" rel="noopener">Odpri v Google Zemljevidih</a></div>
+  </section>
+  <div style="height:clamp(40px,4vw,80px)"></div>
+</main>
+<div id="ftr"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
